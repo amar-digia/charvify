@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="homepage/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header starts from here -->
+    <header>
+      <div style="display: flex; flex-direction: row; align-items: center">
+        <h1>Charvify</h1>
+        <div style="display: flex; flex-direction: row; padding-left: 9rem">
+          <p>HOME</p>
+          <p style="padding-left: 2rem; padding-right: 2rem">ABOUT</p>
+          <p>CONTACT US</p>
+        </div>
+        <div style="flex: 1"></div>
+        <div>
+          <img
+            src="assets/svgs/person.svg"
+            alt="Person Icon"
+            width="24"
+            height="24"
+          />
+          <img
+            style="margin-left: 28px; margin-right: 28px"
+            src="assets/svgs/cart.svg"
+            alt="Person Icon"
+            width="24"
+            height="24"
+          />
+          <img
+            src="assets/svgs/menu.svg"
+            alt="Person Icon"
+            width="24"
+            height="24"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- header ends here -->
+
+    <!-- main content starts from here -->
+
+    <main>
+      <!-- banner starts here -->
+      <div style="position: relative; width: 100%; height: auto">
+        <img
+          src="https://res.cloudinary.com/dl2jthhsv/image/upload/v1765473679/banner_lzhurc.jpg"
+          width="100%"
+          style="object-fit: contain"
+          alt="banner image"
+        />
+        <div class="banner-content">
+          <p class="banner-heading">Stylist picks beat<br />the heat</p>
+          <button class="secondary-button" onclick="alert('clicked')">
+            Shop Now
+          </button>
+        </div>
+      </div>
+      <!-- banner ends here -->
+
+      <!-- section 1 starts here -->
+      <div>
+        <div class="section-heading">Discover NEW Arrivals</div>
+        <div class="section-subHeading">Recently added shirts!</div>
+        <div class="grid-container" id="products-grid"></div>
+      </div>
+
+      <!-- section 1 ends here -->
+
+      <!-- benefits starts here -->
+
+      <div class="benefits-row" id="benefits-container"></div>
+
+      <div>
+        <div class="section-heading">Top Sellers</div>
+        <div class="section-subHeading">Browse our top-selling products</div>
+        <div class="topseller-row" id="topseller-container"></div>
+      </div>
+    </main>
+
+    <script src="homepage/script.js"></script>
+  </body>
+</html>
