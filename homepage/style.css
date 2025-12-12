@@ -66,6 +66,22 @@ h1 {
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.primary-button {
+  color: #fff;
+  border-radius: 0px;
+  background: #024e82;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.primary-white-button {
+  color: #024e82;
+  border-radius: 0px;
+  background: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
 .secondary-button {
   color: white;
   border: 5px solid white;
@@ -201,11 +217,36 @@ h1 {
 
 .topseller-row {
   display: flex;
-
   flex-wrap: nowrap; /* important: don’t wrap items */
-  overflow-x: auto; /* enable horizontal scrolling */
   gap: 20px; /* spacing between items */
   padding: 62px 62px; /* optional padding */
   box-sizing: border-box;
+  flex: 0 0 auto;
   scroll-behavior: smooth; /* smooth scrolling */
+}
+
+.offer-card {
+  padding: 120px 40px 120px 40px;
+  background-color: #000;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-heading {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 32;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.offer-subHeading {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 18;
+  font-weight: 400;
+  text-align: center;
+  line-height: 24px;
 }

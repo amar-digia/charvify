@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <!-- header starts from here -->
     <header>
@@ -79,10 +80,53 @@
 
       <div class="benefits-row" id="benefits-container"></div>
 
-      <div>
+      <div style="flex-direction: row; display: flex; padding: 62px">
+        <div class="offer-card" style="flex: 5; margin-right: 20px">
+          <h2 class="offer-heading" style="margin-bottom: 0%">peace of mind</h2>
+          <p
+            class="offer-subHeading"
+            style="margin-top: 24px; margin-bottom: 32px"
+          >
+            A one-stop platform for all your fashion needs,<br />
+            hassle-free. Buy with a peace of mind.
+          </p>
+          <button class="primary-white-button" onclick="alert('clicked')">
+            Buy Now
+          </button>
+        </div>
+
+        <div class="offer-card" style="flex: 3">
+          <h2 class="offer-heading" style="margin-bottom: 0%">
+            Buy 2 Get 1 Free
+          </h2>
+          <p
+            class="offer-subHeading"
+            style="margin-top: 24px; margin-bottom: 32px"
+          >
+            End of season sale. Buy any 2 items of your choice <br />
+            and get 1 free.
+          </p>
+          <button class="primary-white-button" onclick="alert('clicked')">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <div
+        style="
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          overflow-x: hidden;
+        "
+      >
         <div class="section-heading">Top Sellers</div>
         <div class="section-subHeading">Browse our top-selling products</div>
         <div class="topseller-row" id="topseller-container"></div>
+        <button class="primary-button" onclick="alert('clicked')">
+          Shop Now
+        </button>
       </div>
     </main>
 
