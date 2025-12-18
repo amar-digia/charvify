@@ -1,0 +1,60 @@
+/* General Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* light background */
+  color: #333; /* dark text */
+}
+
+/* Cart Container - parent of .empty-cart */
+.cart-container {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+  min-height: 100vh; /* full viewport height */
+}
+
+/* Empty Cart Card */
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers children horizontally */
+  text-align: center;
+}
+
+/* Headings and Paragraph */
+.empty-cart h2 {
+  color: #024e82;
+  margin-bottom: 0.75rem;
+}
+
+.empty-cart p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Start Shopping Button */
+.empty-cart .shop-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  margin-top: 2rem;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.empty-cart .shop-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .empty-cart {
+    padding: 1.5rem;
+  }
+}

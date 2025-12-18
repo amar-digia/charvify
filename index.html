@@ -9,42 +9,55 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script src="homepage/script.js"></script>
   </head>
 
   <body>
     <!-- header starts from here -->
+
     <header>
       <div style="display: flex; flex-direction: row; align-items: center">
         <h1>Charvify</h1>
         <div style="display: flex; flex-direction: row; padding-left: 9rem">
-          <p>HOME</p>
-          <p style="padding-left: 2rem; padding-right: 2rem">ABOUT</p>
-          <p>CONTACT US</p>
+          <p style="color: #024e82; cursor: pointer">HOME</p>
+          <a href="about_page/ui.html" style="text-decoration: none">
+            <p style="padding-left: 2rem; padding-right: 2rem">ABOUT</p>
+          </a>
+          <a href="contact_us_page/ui.html" style="text-decoration: none">
+            <p>CONTACT US</p>
+          </a>
         </div>
         <div style="flex: 1"></div>
         <div>
-          <img
-            src="assets/svgs/person.svg"
-            alt="Person Icon"
-            width="24"
-            height="24"
-          />
-          <img
-            style="margin-left: 28px; margin-right: 28px"
-            src="assets/svgs/cart.svg"
-            alt="Person Icon"
-            width="24"
-            height="24"
-          />
+          <a href="profile_page/ui.html" style="text-decoration: none">
+            <img
+              src="assets/svgs/person.svg"
+              alt="Person Icon"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a href="cart_page/ui.html" style="text-decoration: none">
+            <img
+              style="margin-left: 28px; margin-right: 28px"
+              src="assets/svgs/cart.svg"
+              alt="Cart Icon"
+              width="24"
+              height="24"
+            />
+          </a>
           <img
             src="assets/svgs/menu.svg"
-            alt="Person Icon"
+            onclick="alert('This feature is coming soon!')"
+            style="cursor: pointer"
+            alt="Menu Icon"
             width="24"
             height="24"
           />
         </div>
       </div>
     </header>
+
     <!-- header ends here -->
 
     <!-- main content starts from here -->
@@ -60,7 +73,10 @@
         />
         <div class="banner-content">
           <p class="banner-heading">Stylist picks beat<br />the heat</p>
-          <button class="secondary-button" onclick="alert('clicked')">
+          <button
+            class="secondary-button"
+            onclick="alert('This feature is coming soon!')"
+          >
             Shop Now
           </button>
         </div>
@@ -90,7 +106,10 @@
             A one-stop platform for all your fashion needs,<br />
             hassle-free. Buy with a peace of mind.
           </p>
-          <button class="primary-white-button" onclick="alert('clicked')">
+          <button
+            class="primary-white-button"
+            onclick="alert('This feature is coming soon!')"
+          >
             Buy Now
           </button>
         </div>
@@ -106,7 +125,10 @@
             End of season sale. Buy any 2 items of your choice <br />
             and get 1 free.
           </p>
-          <button class="primary-white-button" onclick="alert('clicked')">
+          <button
+            class="primary-white-button"
+            onclick="alert('This feature is coming soon!')"
+          >
             Buy Now
           </button>
         </div>
@@ -124,12 +146,68 @@
         <div class="section-heading">Top Sellers</div>
         <div class="section-subHeading">Browse our top-selling products</div>
         <div class="topseller-row" id="topseller-container"></div>
-        <button class="primary-button" onclick="alert('clicked')">
+        <button
+          class="primary-button"
+          onclick="alert('This feature is coming soon!')"
+        >
           Shop Now
         </button>
       </div>
     </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-column">
+          <h4>COMPANY INFO</h4>
+          <a href="#">About Us</a>
+          <a href="#">Latest Posts</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Shop</a>
+        </div>
 
-    <script src="homepage/script.js"></script>
+        <div class="footer-column">
+          <h4>HELP LINKS</h4>
+          <a href="#">Tracking</a>
+          <a href="#">Order Status</a>
+          <a href="#">Delivery</a>
+          <a href="#">Shipping Info</a>
+          <a href="#">FAQ</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>USEFUL LINKS</h4>
+          <a href="#">Special Offers</a>
+          <a href="#">Gift Cards</a>
+          <a href="#">Advertising</a>
+          <a href="#">Terms of Use</a>
+        </div>
+
+        <div class="footer-column newsletter">
+          <h4>GET IN THE KNOW</h4>
+          <div class="newsletter-box">
+            <input type="email" placeholder="Enter email" />
+            <button>&#8594;</button>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer-bottom">
+        <div class="footer-left">
+          <p>© 2025 Charvify eCommerce</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <img src="assets/visa.jpg" alt="Visa" />
+          <img src="assets/mastercard.jpg" alt="MasterCard" />
+          <img src="assets/paypal.jpg" alt="PayPal" />
+          <img src="assets/visae.jpg" alt="Visa Electron" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
