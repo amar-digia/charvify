@@ -315,7 +315,8 @@ button:hover {
 }
 
 .footer {
-  background-color: #fff;
+  margin-top: 4rem;
+  background-color: #fbfbfb;
   padding: 4rem 6rem 2rem;
   font-family: Arial, sans-serif;
   color: #111;
